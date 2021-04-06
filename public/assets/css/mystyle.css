@@ -1,0 +1,28 @@
+.comment-widgets .comment-row:hover {
+  background: rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+}
+
+.comment-widgets .comment-row {
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+  padding: 15px;
+}
+
+.loginicon {
+  width: 300px;
+  margin: 20px;
+}
+
+.logoicon {
+  width: 150px;
+  margin: 10px;
+}
+.logotxt {
+  margin: 5px;
+  font-weight: bold;
+}
+.logotitle {
+  font-weight: bold;
+  margin: 5px;
+  float: right;
+}
