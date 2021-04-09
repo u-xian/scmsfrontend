@@ -33,7 +33,6 @@ import ListSubheader from "@material-ui/core/ListSubheader";
 import ListItem from "@material-ui/core/ListItem";
 import Divider from "@material-ui/core/Divider";
 import ListItemText from "@material-ui/core/ListItemText";
-import Link from "@material-ui/core/Link";
 
 import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
@@ -503,7 +502,7 @@ function Row(props) {
                           {c.cards}
                         </TableCell>
                         <TableCell className={classes.tablecell}>
-                          {c.denom_id}
+                          {c.denominations.label}
                         </TableCell>
                         <TableCell className={classes.tablecell}>
                           {dateFormat(c.createdAt, "yyyy-mm-dd")}
