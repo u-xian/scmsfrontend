@@ -200,6 +200,15 @@ const ProductFormList = ({ user }) => {
       </Grid>
       <Grid container spacing={2}>
         <Grid item xs={4}>
+          {loading && (
+            <Loader
+              className="text-center"
+              color="#1e88e5"
+              type="ThreeDots"
+              height="50"
+              width="50"
+            />
+          )}
           <form onSubmit={handleSubmit}>
             <Grid container>
               <Grid container item xs={12} alignItems="center" spacing={1}>

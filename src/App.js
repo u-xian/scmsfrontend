@@ -6,7 +6,6 @@ import { Provider } from "react-redux";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import PropTypes from "prop-types";
 import {
   createMuiTheme,
   ThemeProvider,
@@ -14,8 +13,6 @@ import {
 } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Hidden from "@material-ui/core/Hidden";
-
-import { AppBar } from "@material-ui/core";
 
 //Authentication
 import auth from "./services/authService";
@@ -25,7 +22,6 @@ import ChangePassword from "./components/forms/changepassword";
 
 //Layout Views
 import Navigator from "./layout/Navigator";
-import Content from "./layout/Content";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 
@@ -273,9 +269,5 @@ function App(props) {
     </ThemeProvider>
   );
 }
-
-AppBar.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
 
 export default withStyles(styles)(App);
