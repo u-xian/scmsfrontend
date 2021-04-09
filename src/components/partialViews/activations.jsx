@@ -211,14 +211,13 @@ function Row(props) {
           </IconButton>
         </TableCell>
         <TableCell>
-          <Link
-            component="button"
-            variant="body2"
-            underline="none"
+          <Chip
+            label={row.actno}
+            color="primary"
+            variant="outlined"
+            size="small"
             className={classes.tablecell}
-          >
-            {row.actno}
-          </Link>
+          />
         </TableCell>
         <TableCell className={classes.tablecell}>
           {dateFormat(row.createdAt, "yyyy-mm-dd")}
@@ -454,7 +453,7 @@ function Row(props) {
       </TableRow>
 
       <TableRow>
-        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
+        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={7}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box margin={1}>
               <Typography variant="h6" gutterBottom component="div">
