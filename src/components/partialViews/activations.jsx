@@ -88,7 +88,7 @@ function Row(props) {
   const [commentsByAct, setCommentsByAct] = useState([]);
   const [anchorEl, setAnchorEl] = useState(null);
   const [anchorElReject, setAnchorElReject] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const [pageDetails, setPageDetails] = useState(0);
   const [rowsPerPageDetails, setRowsPerPageDetails] = useState(5);
