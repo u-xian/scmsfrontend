@@ -1,21 +1,26 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+
+import { withStyles } from "@material-ui/core/styles";
+
 import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import Grid from "@material-ui/core/Grid";
 
 import Hidden from "@material-ui/core/Hidden";
+
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import Toolbar from "@material-ui/core/Toolbar";
-import { withStyles } from "@material-ui/core/styles";
 import LogoutIcon from "@material-ui/icons/ExitToApp";
+import AccountBoxIcon from "@material-ui/icons/AccountBox";
+import Avatar from "@material-ui/core/Avatar";
+
+import Toolbar from "@material-ui/core/Toolbar";
+
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import AccountBoxIcon from "@material-ui/icons/AccountBox";
-import Avatar from "@material-ui/core/Avatar";
 
 const lightColor = "rgba(255, 255, 255, 0.7)";
 
@@ -74,18 +79,18 @@ function Header(props) {
               </Grid>
             </Hidden>
             <Grid item xs />
-            <Grid item> 
-                <IconButton
+            <Grid item>
+              <IconButton
                 size="small"
-                  color="inherit"
-                  aria-controls="simple-menu"
-                  aria-haspopup="true"
-                  onClick={handleClick}
-                  className={classes.iconButtonAvatar}
-                >
-                  <Avatar src="" alt={user.username} />
-                  {user.username}
-                </IconButton>
+                color="inherit"
+                aria-controls="simple-menu"
+                aria-haspopup="true"
+                onClick={handleClick}
+                className={classes.iconButtonAvatar}
+              >
+                <Avatar src="" alt={user.username} />
+                {user.username}
+              </IconButton>
               <Menu
                 id="simple-menu"
                 anchorEl={anchorEl}
